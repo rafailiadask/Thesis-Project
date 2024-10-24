@@ -1,0 +1,43 @@
+package com.example.productspurchaseapp.ViewHolder;
+
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.productspurchaseapp.Interface.ItemClickListener;
+import com.example.productspurchaseapp.R;
+
+public class SubcategoryViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+
+        public TextView SubcategoryName, SubcategoryDescription,SubcategoryPrice,SubcategoryPid;
+        public ImageView imageView;
+        public ItemClickListener listener;
+        public SubcategoryViewHolder(@NonNull View itemView) {
+        super(itemView);
+
+        imageView=(ImageView) itemView.findViewById(R.id.subcategories_image);
+        SubcategoryName=(TextView) itemView.findViewById(R.id.subcategories_name);
+        SubcategoryDescription=(TextView) itemView.findViewById(R.id.subcategories_description);
+        SubcategoryPrice=(TextView) itemView.findViewById(R.id.subcategories_price);
+        SubcategoryPid=(TextView) itemView.findViewById(R.id.subcategories_pid);
+
+        itemView.setOnClickListener(this);
+    }
+        public void setItemClickListener(ItemClickListener listener)
+        {
+            this.listener=listener;
+
+        }
+        @Override
+        public void onClick(View view)
+        {
+            listener.onClick(view, getAdapterPosition(), false);
+
+        }
+    }
+
+
+
