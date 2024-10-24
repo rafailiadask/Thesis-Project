@@ -1,0 +1,10 @@
+package com.example.productspurchaseapp.Prevalent;
+
+import com.example.productspurchaseapp.Model.Users;
+
+public class Prevalent
+{
+   public static Users currentΟnlineUser;
+
+
+}
