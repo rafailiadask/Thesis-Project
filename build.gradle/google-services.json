@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "662257531258",
+    "project_id": "productspurchaseapp",
+    "storage_bucket": "productspurchaseapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662257531258:android:fad1fad264e37125993ec3",
+        "android_client_info": {
+          "package_name": "com.example.productspurchaseapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9mH-6bKG1RmOA4Ck7EtWjgY-5W5cxEfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
